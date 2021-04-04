@@ -1,0 +1,363 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+        <title>welcome</title>
+        <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js" charset="UTF-8"></script><style>
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  position: relative;
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.bgimg-1 {
+  background-image: url("https://images.unsplash.com/photo-1537726235470-8504e3beef77?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8aW50ZXJpb3IlMjBkZXNpZ258ZW58MHx8MHw%3D&ixlib=rb-1.2.1&w=1000&q=80");
+  min-height: 100%;
+}
+
+.bgimg-2 {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVv9ya6dx2WDc9rsBkxt40-qw0OArMLxneoQ&usqp=CAU");
+  min-height: 400px;
+}
+
+.bgimg-3 {
+  background-image: url("https://super.homelane.com/products/07dec18/homeinteriors/6.jpg");
+  min-height: 400px;
+}
+
+.caption {
+  position:absolute;
+  left:0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+.caption span.border {
+  background-color: rgb(7, 0, 0);
+  color: #fff;
+   padding: 30px;
+  font-size: 70px;
+  font-family: Haettenschweiler;
+  text-shadow: 3px 3px 3px black;
+  letter-spacing: 10px;
+}
+.caption span.okay {
+    color:azure;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-shadow: 3px 3px 3px black;
+    letter-spacing: 5px;
+    font-size: 30px;
+}
+h2 {
+  letter-spacing: 5px;
+  font-size: 40px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color:white;
+}
+.but1{
+  background:transparent;
+  border: none;
+  color:rgb(250, 242, 242);
+  text-align: center;
+  font-size: 40px;
+  padding:8px;
+  transition: all 0.5s;
+  cursor:pointer;
+  margin: 5px;
+  text-shadow: 2px 2px 2px rgb(14, 13, 13);
+}
+.button {
+  border-radius: 8px;
+  background-color: white;
+  border: none;
+  color:black;
+  text-align: center;
+  font-size: 40px;
+  padding:18px;
+  width: 300px;
+  transition: all 0.5s;
+  cursor:pointer;
+  margin: 5px;
+  text-shadow: 2px 2px 2px grey;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+.sidenav a {
+  padding: 8px 8px 8px 33px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+.sidenav a:visited { 
+  color:#ddd;
+ padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.sidenav a:active { 
+color:#f1f1f1;
+}
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+footer {
+    font-family: "montserrat-regular", sans-serif;
+    font-size: 8px;
+    padding: 10px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.2);
+    position: relative;
+}
+
+footer a, footer a:visited {
+    color: #862121;
+}
+
+footer a:hover, footer a:focus {
+    color: rgb(12, 11, 11);
+}
+
+.footer-social {
+    list-style: none;
+    margin-top: 3rem;
+    margin-left: 0;
+    font-family: "montserrat-regular", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+}
+
+.footer-social:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.footer-social li {
+    display: inline-block;
+    padding-left: 0;
+    margin-right: .9rem;
+    line-height: 3.9rem;
+    vertical-align: middle;
+}
+
+.footer-social li::after {
+    content: "|";
+    color: rgba(20, 20, 20, 0.15);
+    padding-left: 20px;;
+}
+
+.footer-social li i {
+    font-size: 40px;
+    line-height: 20px;;
+    vertical-align: middle;
+}
+
+.footer-social li span {
+    margin-left: 20px;
+}
+
+.footer-social li a {
+    color: rgb(5, 5, 5);
+}
+.footer-social li a:hover{
+    color: rgb(199, 37, 37);
+}
+
+.footer-social li:last-child {
+    margin-right: 0;
+}
+
+.footer-social li:last-child::after {
+    display: none;
+}
+.footer-social li span, .footer-social li::after {
+        display: none;
+    }
+.footer-bottom{
+  background:rgb(49, 49, 49);
+  color:rgb(172, 167, 167);
+  height:30px;
+  text-align:center;
+  position: absolute;
+  bottom:0px;
+  font-size:15px;
+  padding-top:10px;
+  width:100%;
+  letter-spacing: 1px;
+}
+</style>
+<script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+      document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      document.getElementById("main").style.marginLeft= "0";
+      document.body.style.backgroundColor = "white";
+    }
+</script>
+</head>
+<body>
+<div class="bgimg-1">
+    <button class="but1" onclick="openNav()">☰</button>
+  <div class="caption"> 
+  <span class="border"><bold>LA HAVEN</bold></span><br>
+  <span class="okay"><h5>Your dream house, a click away!</h5></span>
+  </div>
+</div>
+
+<div style="color: rgb(172, 170, 170);background-color:rgb(31, 29, 29);text-align:center;padding:50px 80px;text-align: justify;">
+  <h2 style="text-align:center;">ABOUT</h2>
+  <p>The idea behind La Haven is to help people understand their specific interior designing choices, improve their home outlooks and most importantly have their personal interior designer just a click away
+      Enable us to help you make your design choices with some of the best interior designers in town!
+      All your home design needs met at one perfect destination. Analyze, Classify and Make a Choice. 
+      Go ahead and explore how we make your dream house a reality.
+Happy Styling!</p>
+</div>
+
+<div class="bgimg-2">
+  <div class="caption">
+  <span class="border" style="background-color:transparent;font-size:25px;color:black;">Go forth and design away!</span>
+  </div>
+</div>
+
+<div style="position:relative;">
+  <div style="color:#ddd;background-color:rgb(71, 70, 70);text-align:center;padding:50px 80px;text-align: justify;">
+  <p>From colour to texture, variety to elegance , party-ready to cozy-comfy, vintage grace to modern chic,  Scandinavian kitchen or a country-style bedroom, we have you covered!</p>
+  </div>
+</div>
+
+<div class="bgimg-3">
+  <div class="caption">
+  <span class="border" style="background-color:transparent;font-size:25px;color: #f1f1f1;">Designing your dreams, Effortlessly!</span>
+  </div>
+</div>
+
+<div style="position:relative;">
+  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+  <p>
+At La Haven, we provide a wide range of features all inline to  help you in your quest to design a home that looks like a fairytale.
+With love for all things creative, our goal is to aid people in embracing new trends, 
+experiment with ideas and make your home look like a work of art. Go ahead and explore!
+</p>
+  </div>
+</div>
+
+<div class="bgimg-1">
+  <div class="caption">
+      <button class="button"><span onclick="openNav()">Get Started</span></button>
+    </div>
+  </div>
+  <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          
+          <a href="./fashionservices.html"target="_blank">Connect</a>
+          <a href="./event.html"target="_blank">Rent Away</a>
+          <a href="./login.html"target="_blank">Style It Up</a>
+          
+          <a href="./offers.html"target="_blank">Offers</a>
+          <a href="./contactus.html"target="_blank">Contact Us</a>
+        </div>
+        <footer>
+
+                        <h1><font color="black"><h1>CONTACT</h></font></h1>
+                        <font color="black"><h1><em>Feel free to contact us via</em></h1></font>
+               <div class="row">
+                    <div class="col-full">
+          
+                        <ul class="footer-social">
+                            <li><a href="https://www.facebook.com/&ref=fbx_album">
+                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                            </a></li>
+                            <li><a href="https://www.twitter.com">
+                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                            </a></li>
+                            <li><a href="www.gmail.com">
+                                <i class="fa fa-google-plus" aria-hidden="true"></i>
+                            </a></li>
+                            <li><a href="https://instagram.com" target="_blank">
+                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                            </a></li>
+                        </ul>
+                    </div>
+                </div>
+                <br>
+          <div class="footer-bottom">
+            &copy;laHaven.com|Designed by MRD
+          </div>
+            </footer>
+      </body>
+</html>
